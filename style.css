@@ -1,0 +1,78 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    
+    position: relative;
+}
+
+/* Add the following styles to hide the scrollbar */
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #1f1d1d;
+}
+
+h1 {
+    color: #82b91d;
+}
+
+h2 {
+    color: #07fd5d;
+}
+
+.text-indigo-500 {
+    color: #1DB954;
+}
+
+.text-indigo-500:hover {
+    color: #68D391;
+}
+
+body,
+html {
+    height: 100%;
+    padding: 0;
+}
+
+#navbar {
+    background-color: #1f1d1d;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+@media only screen and (max-width: 400px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        padding-top: 194px; /* Adjust the value based on your navbar height */
+    }
+
+    #navbar {
+        padding: 5px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        padding-top: 85px; /* Adjust the value based on your navbar height */
+    }
+
+    #navbar {
+        padding: 10px;
+    }
+
+    .globalContainer {
+        margin-top: 80px; /* Adjust the value based on your navbar height and design */
+    }
+}
